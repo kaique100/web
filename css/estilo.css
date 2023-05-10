@@ -1,0 +1,192 @@
+html, body{
+  height:100%; 
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #00a1fc;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 34px;
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+
+.logo{
+  font-size: 5rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-link {
+  transition: 0.5s ease;
+
+}
+
+.nav-link:hover {
+  color: #0088d2;
+}
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px auto;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+main {
+  background: url("https://st2.depositphotos.com/1283676/7285/i/450/depositphotos_72850313-stock-photo-new-car-transported.jpg") no-repeat center center;
+  background-size: cover;
+  /* height: 90vh; */
+}
+.conteudo{
+  flex: 1 0 auto;
+}
+.container {
+  width: 98vw;
+  /* height: 128vh; */
+  margin: 11% 5%;
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+  .box {
+    width: 90%;
+    height: 54%;
+  border-radius: 8%;
+  background: #00a1fc;
+  text-align: center;
+  font-size: 1.3rem;
+  }
+
+.box h2 {
+  padding: 3% 13% 15% 14%;
+}
+.box h2 a{
+  padding: 33% 13% 15% 14%;
+  font-size: 1.4rem;
+}
+.box p{
+  font-size: 1.3rem;
+  padding: 4% 6% 0% 6%;
+}
+
+.rodape{
+  flex-shrink: 0;
+  background-color: #00a1fc;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  
+}
+
+.organograma{
+  margin: 11% 5%;
+
+}
+
+.organograma img{
+  width: 100%;
+
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+
+}
+
+.hamburguer {
+    display: block;
+}
+
+.hamburguer .active .bar:nth-child(2) {
+    opacity: 0;
+
+}
+
+.hamburguer .active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+
+}
+
+.hamburguer .active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+
+}
+
+.nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    border-radius: 0 0 20px 20px;
+    background-color: #00a1fc;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.nav-item {
+    margin: 4rem 0;
+
+}
+
+.nav-menu.active {
+    left: 0;
+}
+  
+}
+
+
